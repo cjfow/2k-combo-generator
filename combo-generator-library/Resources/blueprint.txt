@@ -1,0 +1,30 @@
+﻿start direction:
+- facing the hoop
+- facing away from the hoop
+- sideways (ball to basket)
+- sideways (ball away from basket)
+
+
+end direction:
+- facing the hoop
+- facing away from the hoop
+- sideways (ball to basket)
+- sideways (ball away from basket)
+
+
+start position:
+- standing
+- walking
+- running
+
+
+end position:
+- standing
+- walking
+- running
+
+
+UsingL2 (bool)
+Hand (right/left)
+moveDuration (ms)
+moveDifficulty (e/m/h)
