@@ -28,3 +28,28 @@ UsingL2 (bool)
 Hand (right/left)
 moveDuration (ms)
 moveDifficulty (e/m/h)
+
+class library:
+ - models, business logic, extensions, helpers
+
+
+WPF:
+- create a wrapper class for Move.cs in MoveViewModel
+	- move property, ctor Move=move, props for Name, hand, input,
+
+Winforms:
+- 
+
+pass in:
+    - a comboLength (int)
+    - a startingHand (Right/Left)
+    - a difficulty (Easy, Medium, Hard, Enoc)
+
+track combo state:
+    - current hand
+    - current direction
+    - current position
+
+a moves one at a time:
+    - the next move must be valid (StartPosition and StartDirection must match the current state)
+    - its difficulty must be <= chosen difficulty

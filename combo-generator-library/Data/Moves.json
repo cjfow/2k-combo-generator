@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Momentum Spin",
+    "StartDirection": "TowardsHoop",
+    "EndDirection": "AwayFromHoop",
+    "StartPosition": "Standing",
+    "EndPosition": "Running",
+    "MoveDifficulty": "Easy",
+    "HandSwitch": false,
+    "UsingL2": false,
+    "MoveDuration": 1.0
+  }
+]
