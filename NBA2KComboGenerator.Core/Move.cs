@@ -1,4 +1,4 @@
-﻿namespace combo_generator_library;
+﻿namespace NBA2KComboGenerator.Core;
 
 public enum Direction { TowardsHoop, AwayFromHoop, SidewaysBallToBasket, SidewaysBallAway }
 

@@ -1,8 +1,8 @@
 ﻿using System.Text.Json;
 
-namespace combo_generator_library;
+namespace NBA2KComboGenerator.Core;
 
-public class JsonMoveLoader
+public class JsonDataAccess
 {
     public async Task<List<Move>> LoadMovesAsync(string filePath)
     {

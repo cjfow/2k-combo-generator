@@ -1,14 +1,23 @@
-﻿namespace combo_generator_library;
+﻿namespace NBA2KComboGenerator.Core;
 
 public class ComboGenerator
 {
     private readonly List<Move> _allMoves;
     private readonly Random _rand = new();
 
-    public ComboGenerator(List<Move> availableMoves)
+    private ComboGenerator(List<Move> availableMoves)
     {
-        // if availableMoves is not null, set _allMoves to it, if it is null, throw exception
-        _allMoves = availableMoves ?? throw new ArgumentNullException($"No available moves: {nameof(availableMoves)}");
+        _allMoves = availableMoves;
+    }
+
+    public static ComboGenerator Create(List<Move>? availableMoves)
+    {
+        if (availableMoves is null || availableMoves.Count == 0)
+        {
+            throw new ArgumentNullException(nameof(availableMoves), "availableMoves is null or zero.");
+        }
+
+        return new ComboGenerator(availableMoves);
     }
 
     public List<Move> GenerateCombo(int comboLength, Difficulty maxDifficulty)
